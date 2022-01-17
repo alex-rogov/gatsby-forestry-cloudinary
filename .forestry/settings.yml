@@ -9,8 +9,9 @@ sections:
 - type: directory
   path: src/content
   label: Pages
-  create: all
-  match: "**/*"
+  create: documents
+  match: "*.md"
+  new_doc_ext: md
   templates:
   - page
 upload_dir: ''
