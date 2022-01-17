@@ -1,4 +1,27 @@
 ---
 label: Meta
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+    max: 60
+  label: Title
+  description: Meta title
+- name: description
+  type: text
+  config:
+    required: true
+    max: 160
+  label: Description
+  description: Meta description
+- name: s
+  type: blocks
+  label: s
+  template_types:
+  - meta
+  - meta
+  config:
+    min: 
+    max: 
