@@ -1,4 +1,32 @@
 ---
 label: Card
 hide_body: true
-fields: []
+fields:
+- name: image
+  type: file
+  config:
+    maxSize: 
+  label: Image
+  description: Card image
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Card title
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
+  description: Card subtitle
+- name: body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Body
+  description: Card body
