@@ -1,4 +1,16 @@
 ---
 label: Hero
 hide_body: true
-fields: []
+fields:
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+  description: Hero Heading
+- name: cover_image
+  type: file
+  config:
+    maxSize: 
+  label: Cover Image
+  description: Hero Cover Image
