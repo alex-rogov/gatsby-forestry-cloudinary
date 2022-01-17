@@ -16,12 +16,8 @@ fields:
     max: 160
   label: Description
   description: Meta description
-- name: s
-  type: blocks
-  label: s
-  template_types:
-  - meta
-  - meta
-  config:
-    min: 
-    max: 
+- name: keywords
+  type: tag_list
+  default: []
+  label: Keywords
+  description: Meta keywords
