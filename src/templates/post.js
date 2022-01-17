@@ -6,8 +6,7 @@ export default function Template({ data }) {
   const { frontmatter, html } = markdownRemark
   return (
     <div className="blog-post">
-      <h1>{frontmatter.title}</h1>
-      <h2>{frontmatter.date}</h2>
+      <h1>{frontmatter.title || 'default'}</h1>
       <div
         className="blog-post-content"
         dangerouslySetInnerHTML={{ __html: html }}
@@ -17,12 +16,10 @@ export default function Template({ data }) {
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        path
         title
       }
     }
