@@ -12,5 +12,3 @@ fields:
     min: 
     max: 
   description: Page content
-pages:
-- src/content/new-page.md
