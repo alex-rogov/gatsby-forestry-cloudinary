@@ -1,4 +1,18 @@
 ---
 label: Card List
 hide_body: true
-fields: []
+fields:
+- name: list
+  type: field_group_list
+  fields:
+  - name: card
+    type: include
+    config: {}
+    template: card
+    label: Card
+  config:
+    min: 
+    max: 
+    labelField: ''
+  label: List
+  description: Card list
