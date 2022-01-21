@@ -24,8 +24,8 @@ fields:
     options: []
     source:
       type: pages
-      section: data
-      file: src/data/global/authors/authors.yaml
+      section: categories
+      file: src/data/global/categories.yaml
       path: 
   label: Author
 - name: category
