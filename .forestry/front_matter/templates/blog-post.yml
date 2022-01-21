@@ -28,34 +28,6 @@ fields:
       file: src/data/global/authors/authors.yaml
       path: 
   label: Author
-- name: slug
-  type: text
-  config:
-    required: false
-  label: Slug
-- name: body
-  type: textarea
-  default: ''
-  config:
-    required: true
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Body
-- name: excerpt
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Excerpt
-- name: photo
-  type: file
-  config:
-    maxSize: 64
-  label: Photo
 - name: category
   type: select
   default: []
@@ -68,3 +40,16 @@ fields:
       file: src/data/global/authors/authors.yaml
       path: 
   label: Category
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+- name: body
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Body
