@@ -28,6 +28,18 @@ fields:
       file: src/data/global/authors/b.yml
       path: authors
   label: Author
+- name: category
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: data
+      file: src/data/global/categories.yml
+      path: categories
+  label: Category
 - name: tags
   type: tag_list
   default: []
