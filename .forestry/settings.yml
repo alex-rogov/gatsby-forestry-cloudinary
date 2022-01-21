@@ -10,7 +10,7 @@ sections:
   path: src/data
   label: Data
   create: all
-  match: "**/*.yaml"
+  match: "**/*.yml"
 - type: document
   path: src/data/global/categories.yaml
   label: Categories
