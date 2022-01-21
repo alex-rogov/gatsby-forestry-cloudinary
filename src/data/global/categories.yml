@@ -1,9 +1,10 @@
 ---
-- title: Data
-- title: Machine Learning
-- title: Trust
-- title: Human-Machine Interaction
-- title: Whitepaper
-- title: Research
-- title: Our People
-- title: Humans of 2030
+authors:
+  - title: Data
+  - title: Machine Learning
+  - title: Trust
+  - title: Human-Machine Interaction
+  - title: Whitepaper
+  - title: Research
+  - title: Our People
+  - title: Humans of 2030
