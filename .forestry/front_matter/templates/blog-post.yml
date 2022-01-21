@@ -28,10 +28,6 @@ fields:
       file: src/data/global/authors/b.yml
       path: authors
   label: Author
-- name: tags
-  type: tag_list
-  default: []
-  label: Tags
 - name: category
   type: select
   default: []
@@ -44,3 +40,7 @@ fields:
       file: src/data/global/categories.yml
       path: categories
   label: Category
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
