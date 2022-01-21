@@ -1,9 +1,4 @@
 categories:
-  data: Data
-  machine-learning: Machine Learning
-  trust: Trust
-  human-machine: Human-Machine Interaction
-  whitepaper: Whitepaper
-  research: Research
-  out-people: Our People
-  humans-of-2030: Humans of 2030
+  - data: Data
+  - machine-learning: Machine Learning
+  - trust: Trust
