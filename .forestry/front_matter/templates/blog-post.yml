@@ -23,7 +23,7 @@ fields:
     required: true
     options: []
     source:
-      type: documents
+      type: pages
       section: data
       file: src/data/global/authors/authors.yaml
       path: 
