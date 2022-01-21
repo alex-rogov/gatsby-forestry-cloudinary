@@ -32,3 +32,15 @@ fields:
   type: tag_list
   default: []
   label: Tags
+- name: category
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: data
+      file: src/data/global/categories.yml
+      path: categories
+  label: Category
