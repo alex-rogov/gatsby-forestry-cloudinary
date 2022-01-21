@@ -32,3 +32,7 @@ fields:
   type: tag_list
   default: []
   label: Tags
+- name: related_posts
+  type: field_group
+  config: {}
+  label: Related posts
