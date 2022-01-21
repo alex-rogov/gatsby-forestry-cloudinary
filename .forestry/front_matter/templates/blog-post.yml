@@ -48,4 +48,9 @@ fields:
         file: 
         path: 
     label: Related post
+  - name: a
+    type: include
+    config: {}
+    template: a
+    label: A
   label: Related posts
