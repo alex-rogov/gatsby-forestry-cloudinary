@@ -35,4 +35,17 @@ fields:
 - name: related_posts
   type: field_group
   config: {}
+  fields:
+  - name: related_post
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Related post
   label: Related posts
