@@ -23,8 +23,8 @@ fields:
     required: false
     options: []
     source:
-      type: documents
-      section: data
+      type: pages
+      section: pages
       file: src/data/global/categories.yml
       path: categories
   label: Category
