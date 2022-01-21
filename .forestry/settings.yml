@@ -11,6 +11,10 @@ sections:
   label: Data
   create: all
   match: "**/*.yaml"
+- type: document
+  path: src/data/global/categories.yaml
+  label: Categories
+  match: "**/*"
 - type: heading
   label: Blog
 - type: directory
