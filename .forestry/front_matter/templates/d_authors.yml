@@ -1,4 +1,16 @@
 ---
 label: d_authors
 hide_body: true
-fields: []
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+  description: Author's name
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+  description: Author's image
