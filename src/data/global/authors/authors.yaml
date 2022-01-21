@@ -1,0 +1,39 @@
+---
+- name: Amanda Klym
+  image: '../../images/avatar/testimonial-headshot-amanda.jpg'
+- name: Miranda Mantey
+  image: '../../images/avatar/testimonial_headshot_randi.jpeg'
+- name: Daniel Hugo
+  image: '../../images/avatar/testimonial-headshot-daniel.jpg'
+- name: Shannon Ernst
+  image: '../../images/avatar/testimonial-headshot-shannon.jpg'
+- name: Siobhan Owen
+  image: '../../images/avatar/testimonial_headshot_siobhan.jpeg'
+- name: Sue McGill
+  image: '../../images/avatar/testimonial_headshot_sue.jpg'
+- name: ATB Ventures
+  image: '../../images/avatar/testimonial_headshot_atb.jpg'
+- name: Julie Kerr
+  image: '../../images/avatar/testimonial-headshot-julie.jpg'
+- name: Chandra Rink
+  image: '../../images/avatar/testimonial-headshot-chandra.jpg'
+- name: Katie Forshner
+  image: '../../images/avatar/testimonial_headshot_katie.jpeg'
+- name: Erin Iverson
+  image: '../../images/avatar/testimonial_headshot_erin.jpg'
+- name: Anson Li
+  image: '../../images/avatar/testimonial_headshot_anson.jpg'
+- name: Cynthia Chiu
+  image: '../../images/avatar/testimonial_headshot_cynthia.jpg'
+- name: Terrence Coonan
+  image: '../../images/avatar/testimonial_headshot_terrence.jpeg'
+- name: Bartlomiej Kus
+  image: '../../images/avatar/testimonial_headshot_bart.jpeg'
+- name: Amanda Webster
+  image: '../../images/avatar/testimonial_headshot_aw.jpeg'
+- name: Ben Martin
+  image: '../../images/avatar/testimonial-headshot-ben.png'
+- name: Kash Zaidi
+  image: '../../images/avatar/testimonial-headshot-kash.png'
+- name: Jason Ho
+  image: '../../images/avatar/testimonial-headshot-jason.jpeg'
