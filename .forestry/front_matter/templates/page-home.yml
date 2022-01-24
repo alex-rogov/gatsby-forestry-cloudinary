@@ -2,8 +2,11 @@
 label: Page Home
 hide_body: false
 fields:
-- name: hero
-  type: include
-  config: {}
-  template: hero
-  label: Hero
+- name: sections
+  type: blocks
+  template_types:
+  - hero
+  config:
+    min: 
+    max: 
+  label: Sections
