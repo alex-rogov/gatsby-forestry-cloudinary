@@ -1,4 +1,10 @@
 ---
 label: c_content
 hide_body: false
-fields: []
+fields:
+- name: body
+  type: text
+  config:
+    required: false
+  label: Body
+  description: Content Body
