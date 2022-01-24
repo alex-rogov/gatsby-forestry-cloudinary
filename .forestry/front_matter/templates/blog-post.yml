@@ -54,5 +54,3 @@ fields:
     template: a
     label: A
   label: Related posts
-pages:
-- src/content/sdds.md

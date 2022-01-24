@@ -11,7 +11,7 @@ tags:
 - sd
 - sd
 related_posts:
-  related_post: src/content/first-page.md
+  related_post: content/sdds.md
 
 ---
 This is my first Gatsby post written in Markdown!

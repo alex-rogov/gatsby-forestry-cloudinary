@@ -19,6 +19,3 @@ fields:
     min: 
     max: 
   description: Page content
-pages:
-- src/content/asdass-ssd.md
-- src/content/first-page.md
