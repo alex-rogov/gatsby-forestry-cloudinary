@@ -20,3 +20,6 @@ fields:
   config: {}
   template: c_button
   label: Button
+  showOnly:
+    field: include_button
+    value: true
