@@ -7,3 +7,5 @@ fields:
   config: {}
   template: hero
   label: Hero
+pages:
+- src/content/new-page.md
