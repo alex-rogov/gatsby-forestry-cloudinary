@@ -1,6 +1,6 @@
 ---
 label: Page Home
-hide_body: false
+hide_body: true
 fields:
 - name: heading
   type: include
