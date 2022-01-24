@@ -41,7 +41,7 @@ meta:
   - engineering
   - Alberta
 hero:
-  title: Engineering the advancement of all humanity
+  title: Engineering the advancement of all humanitya
   subtitle: Fueled by curiosity, creativity, and collaboration
   image:
     src: ''
