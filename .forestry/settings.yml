@@ -17,7 +17,7 @@ sections:
   path: src/content/blog
   label: Blog
   create: all
-  match: "*/*.md"
+  match: "**/*.md"
   templates:
   - blog-post
 upload_dir: ''
