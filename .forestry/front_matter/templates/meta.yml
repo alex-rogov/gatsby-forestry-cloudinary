@@ -14,3 +14,17 @@ fields:
   default: []
   label: Keywords
   description: Meta keywords
+- name: meta
+  type: field_group
+  config: {}
+  fields:
+  - name: description
+    type: text
+    config:
+      required: false
+    label: Description
+  - name: keywords
+    type: tag_list
+    default: []
+    label: Keywords
+  label: Meta
