@@ -2,7 +2,7 @@
 label: c_button
 hide_body: false
 fields:
-- name: btn_title
+- name: title
   type: text
   config:
     required: false
