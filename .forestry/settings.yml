@@ -6,6 +6,20 @@ webhook_url:
 sections:
 - type: heading
   label: Content
+- type: directory
+  path: src/content
+  label: Pages
+  create: all
+  match: "*/*.md"
+  templates:
+  - page
+- type: directory
+  path: src/content/blog
+  label: Blog
+  create: all
+  match: "*/*.md"
+  templates:
+  - blog-post
 upload_dir: ''
 public_path: ''
 front_matter_path: ''
