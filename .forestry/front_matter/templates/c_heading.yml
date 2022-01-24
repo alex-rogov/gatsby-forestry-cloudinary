@@ -12,6 +12,4 @@ fields:
   config:
     required: false
   label: Subtitle
-  showOnly:
-    field: include_subtitle
-    value: true
+  description: Heading Subtitle
