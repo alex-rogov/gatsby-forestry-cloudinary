@@ -2,13 +2,13 @@
 label: c_button
 hide_body: true
 fields:
-- name: title
+- name: btn_title
   type: text
   config:
     required: false
   label: Title
   description: Button Title
-- name: link
+- name: btn_link
   type: text
   config:
     required: false
