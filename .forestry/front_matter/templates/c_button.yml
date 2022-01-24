@@ -1,4 +1,16 @@
 ---
 label: c_button
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Button Title
+- name: link
+  type: text
+  config:
+    required: false
+  label: Link
+  description: Button Link
