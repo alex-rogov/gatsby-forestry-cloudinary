@@ -2,6 +2,11 @@
 label: Page Home
 hide_body: false
 fields:
+- name: heading
+  type: include
+  config: {}
+  template: c_heading
+  label: Heading
 - name: seo
   type: include
   config: {}
