@@ -2,15 +2,18 @@
 label: c_button
 hide_body: true
 fields:
-- name: btn_title
-  type: text
-  config:
-    required: false
-  label: Title
-  description: Button Title
-- name: btn_link
-  type: text
-  config:
-    required: false
-  label: Link
-  description: Button Link
+- name: button
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+  label: Button
