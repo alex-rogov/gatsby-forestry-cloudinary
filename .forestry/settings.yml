@@ -12,7 +12,7 @@ sections:
   create: documents
   match: "**/*.md"
   templates:
-  - page
+  - page-home
 - type: directory
   path: src/content/blog
   label: Blog
