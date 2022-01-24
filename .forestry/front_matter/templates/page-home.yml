@@ -2,24 +2,16 @@
 label: Page Home
 hide_body: true
 fields:
-- name: heading
-  type: include
-  config: {}
-  template: c_heading
-  label: Heading
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
 - name: seo
   type: include
   config: {}
   template: meta
   label: Seo
-- name: blocks
-  type: blocks
-  label: Blocks
-  template_types:
-  - hero
-  config:
-    min: 
-    max: 
 pages:
 - src/content/atb-ventures.md
 - src/content/new-page.md
