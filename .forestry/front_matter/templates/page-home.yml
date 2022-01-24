@@ -18,5 +18,6 @@ fields:
   template: hero
   label: Hero
 pages:
+- src/content/atb-ventures-1.md
 - src/content/atb-ventures.md
 - src/content/new-page.md
