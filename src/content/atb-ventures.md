@@ -40,5 +40,14 @@ meta:
   - trust
   - engineering
   - Alberta
+hero:
+  title: Engineering the advancement of all humanity
+  subtitle: Fueled by curiosity, creativity, and collaboration
+  image:
+    src: ''
+    alt: ''
+  button:
+    title: ''
+    link: ''
 
 ---
