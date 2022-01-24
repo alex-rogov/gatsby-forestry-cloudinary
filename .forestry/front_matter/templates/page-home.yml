@@ -2,6 +2,11 @@
 label: Page Home
 hide_body: false
 fields:
+- name: seo
+  type: include
+  config: {}
+  template: meta
+  label: Seo
 - name: blocks
   type: blocks
   label: Blocks
