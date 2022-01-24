@@ -10,6 +10,8 @@ category: machine-learning
 tags:
 - sd
 - sd
+related_posts:
+  related_post: src/content/my-first-post.md
 
 ---
 This is my first Gatsby post written in Markdown!
