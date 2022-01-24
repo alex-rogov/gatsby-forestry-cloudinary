@@ -7,6 +7,9 @@ fields:
   config:
     required: false
   label: Title
+- name: include_subtitle
+  type: boolean
+  label: Include Subtitle
 - name: subtitle
   type: text
   config:
@@ -16,6 +19,3 @@ fields:
   showOnly:
     field: include_subtitle
     value: true
-- name: include_subtitle
-  type: boolean
-  label: Include Subtitle
