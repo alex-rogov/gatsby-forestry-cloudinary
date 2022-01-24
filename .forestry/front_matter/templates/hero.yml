@@ -1,6 +1,7 @@
 ---
 label: b_hero
 hide_body: true
+display_field: title
 fields:
 - name: heading
   type: include
