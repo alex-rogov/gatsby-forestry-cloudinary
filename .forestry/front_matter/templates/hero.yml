@@ -12,9 +12,6 @@ fields:
   config: {}
   template: c_image
   label: Cover
-- name: include_button
-  type: boolean
-  label: Include Button
 - name: button
   type: include
   config: {}
@@ -22,4 +19,4 @@ fields:
   label: Button
   showOnly:
     field: include_button
-    value: true
+    value: false
