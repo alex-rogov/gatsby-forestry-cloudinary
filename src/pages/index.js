@@ -1,11 +1,30 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
-const IndexPage = () => (
-  <main>
-    Sourcing markdown recipe (see page at{` `}
-    <Link to="my-first-post">/my-first-post</Link>)
-  </main>
-)
+const IndexPage = () => {
+  const { data } = useStaticQuery(graphql`
+    query {
+      allGlobalYaml {
+        edges {
+          node {
+            categories {
+              data
+              machine_learning
+              trust
+            }
+          }
+        }
+      }
+    }
+  `);
 
-export default IndexPage
+  return (
+    <main>
+      {console.log(data)}
+      Sourcing markdown recipe (see page at{` `}
+      <Link to="my-first-post">/my-first-post</Link>)
+    </main>
+  );
+};
+
+export default IndexPage;
