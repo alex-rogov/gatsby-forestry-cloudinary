@@ -2,11 +2,6 @@
 label: b_hero
 hide_body: true
 fields:
-- name: heading
-  type: include
-  config: {}
-  template: c_heading
-  label: Heading
 - name: cover
   type: include
   config: {}
@@ -20,3 +15,13 @@ fields:
   showOnly:
     field: include_button
     value: false
+- name: hero
+  type: field_group
+  config: {}
+  fields:
+  - name: heading
+    type: include
+    config: {}
+    template: c_heading
+    label: Heading
+  label: Hero
