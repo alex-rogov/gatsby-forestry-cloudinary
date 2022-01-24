@@ -7,13 +7,16 @@ fields:
   config: {}
   template: c_heading
   label: Heading
-- name: button
-  type: include
-  config: {}
-  template: c_button
-  label: Button
 - name: cover
   type: include
   config: {}
   template: c_image
   label: Cover
+- name: include_button
+  type: boolean
+  label: Include Button
+- name: button
+  type: include
+  config: {}
+  template: c_button
+  label: Button
