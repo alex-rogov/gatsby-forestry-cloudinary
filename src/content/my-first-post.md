@@ -14,4 +14,4 @@ related_posts:
   related_post: content/sdds.md
 
 ---
-This is my first Gatsby post written in Markdown!
+This is my first Gatsby post written in [Markdown](sdds)!
