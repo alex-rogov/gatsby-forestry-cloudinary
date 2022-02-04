@@ -1,1 +1,9 @@
-node_modules
+# Dependency directories
+**/node_modules
+ 
+# Gatsby post-build files
+.cache
+public
+
+# Log files
+**/*.log

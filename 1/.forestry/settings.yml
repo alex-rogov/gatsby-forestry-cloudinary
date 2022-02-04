@@ -4,22 +4,31 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Content
+- type: directory
+  path: src/content
+  label: Pages
+  create: documents
+  match: "**/*.md"
+  templates:
+  - page-home
 - type: directory
   path: src/content/blog
-  label: Posts
+  label: Blog
   create: documents
-  match: "**/*"
+  match: "**/*.md"
   templates:
-  - blog_post_template
-upload_dir: uploads
-public_path: "/uploads"
+  - blog-post
+upload_dir: ''
+public_path: ''
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: 
 file_template: ":filename:"
 build:
   preview_output_directory: public
   install_dependencies_command: npm install
-  preview_docker_image: forestryio/node:16
+  preview_docker_image: forestryio/node:12
   mount_path: "/srv"
   working_dir: "/srv"
   instant_preview_command: npm run develop

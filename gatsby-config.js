@@ -1,24 +1,44 @@
 module.exports = {
-  siteMetadata: {
-    title: `sourcing markdown recipe`,
-    description: `Example sourcing markdown`,
-    author: `@gatsbyjs`,
-  },
   plugins: [
-    `gatsby-transformer-remark`,
-    `gatsby-transformer-yaml`,
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-react-helmet',
+    'gatsby-transformer-cloudinary',
+    'gatsby-transformer-remark',
+    'gatsby-plugin-theme-ui',
+    'gatsby-plugin-react-svg',
+    'gatsby-plugin-emotion',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-alias-imports`,
       options: {
-        name: `content`,
-        path: `${__dirname}/src/content`,
+        alias: {
+          components: 'src/components',
+          assets: 'src/assets',
+          containers: 'src/containers',
+          utils: 'src/utils',
+          types: 'src/types',
+        },
+        extensions: ['ts', 'tsx'],
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `data`,
-        path: `${__dirname}/src/data`,
+        name: 'blog',
+        path: `${__dirname}/src/content/blog`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'pages',
+        path: `${__dirname}/src/content/pages`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'content',
+        path: `${__dirname}/src/content`,
       },
     },
   ],
