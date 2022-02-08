@@ -1,20 +1,21 @@
 import * as React from 'react';
-import type { NavLink } from 'types';
+import { Image } from 'theme-ui';
 import { Wrapper, Main, Title, Content, ImageContent } from './index.style';
 
 export type Props = {
   title: string;
-  content: string;
-  image: NavLink;
+  description: string;
+  logo: string;
 };
 
-const Product: React.FC<Props> = ({ title, content, image: { href, src: Src } }) => (
+const Product: React.FC<Props> = ({ title, description, logo }) => (
   <Wrapper>
     <Main>
       {title && <Title>{title}</Title>}
-      {content && <Content>{content}</Content>}
-      {/* TODO: conditional render if its svg or image */}
-      <ImageContent href={href}>{<Src />}</ImageContent>
+      {description && <Content>{description}</Content>}
+      <ImageContent>
+        <Image src={logo} />
+      </ImageContent>
     </Main>
   </Wrapper>
 );

@@ -15,7 +15,7 @@ const Footer: React.FC<Props> = ({ navItems }) => {
         <EmailForm />
         <WrapperNav>
           {navItems?.map((props) => (
-            <NavItem {...props} />
+            <NavItem key={props.title} {...props} />
           ))}
         </WrapperNav>
         <Copyright>© {new Date().getFullYear()} ATB Financial. All Rights Reserved.</Copyright>

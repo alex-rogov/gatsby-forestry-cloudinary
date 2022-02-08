@@ -10,15 +10,22 @@ const fonts = {
 };
 
 const fontSizes = {
-  h1: '3rem',
-  h2: '2.5rem',
-  h2Mobile: '1.625rem',
-  h3: '1.5rem',
+  hero: '4.5rem',
+  heroMobile: '3rem',
+  h1: '2.5rem',
+  h1Mobile: '1.625rem',
+  h2: '1.5rem',
+  h2Mobile: '1.25rem',
+  h3: '1.438rem',
   h3Mobile: '1.25rem',
   h4: '1.75rem',
+  h5: '1.75rem',
+  h5Mobile: '1.5rem',
   h6: '1rem',
   h7: '0.75rem',
   h8: '0.625rem',
+  h9: '0.75rem',
+  body: '1rem',
   bodyS: '0.875rem',
   bodyL: '1.125rem',
 };
@@ -38,18 +45,20 @@ const letterSpacings = {
   loose: '0.8em',
 };
 
-const shadows = {};
+const shadows = {
+  primary: '0px 0px 16px rgba(0, 0, 0, 0.08)',
+};
 
 const radii = {};
 
 const sizes = {
   emailForm: 400,
-  productCard: { width: 260, height: 544 },
+  productCard: 376,
   button: 56,
   input: 48,
 };
 
-const transitions = { html: '0.5s', buttons: '0.4s' };
+const transitions = { html: '0.5s', buttons: '0.2s' };
 
 export default {
   colors,

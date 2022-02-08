@@ -3,11 +3,12 @@ import GlobalStyles, { Fonts } from 'components/global-styles';
 import linkedIn from 'assets/images/icons/linkedin.svg';
 import twitter from 'assets/images/icons/twitter.svg';
 import type { Props as NavItemProps } from 'components/nav-item';
-import { Content, Wrapper } from './index.style';
+import Meta from 'components/meta';
+import { Wrapper } from './index.style';
 import Header from './header';
 import Footer from './footer';
 
-const navItems: NavItemProps[] = [
+export const navItems: NavItemProps[] = [
   {
     title: 'Social',
     noDivider: true,
@@ -46,10 +47,11 @@ const navItems: NavItemProps[] = [
 
 const Layout: React.FC = ({ children }) => (
   <Wrapper>
+    <Meta />
     <GlobalStyles />
     <Fonts />
-    <Header />
-    <Content>{children}</Content>
+    <Header navItems={navItems.slice(1)} />
+    {children}
     <Footer navItems={navItems} />
   </Wrapper>
 );
