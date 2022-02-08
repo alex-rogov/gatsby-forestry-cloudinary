@@ -1,26 +1,26 @@
-// import * as React from 'react';
-// import type { Props as ProductProps } from 'components/product';
-// import PostPreview from 'components/post-preview';
-// import { Wrapper, Title, ButtonAllPosts, WrapperPosts, Main } from './index.style';
+import * as React from 'react';
+import PostPreview from 'components/post-preview';
+import type { Props as PostProps } from 'components/post-preview/index';
+import { Wrapper, Title, LinkAllPosts, WrapperPosts } from './index.style';
 
-// type Props = {
-//   title: string;
-//   description: string;
-//   posts: ProductProps[];
-// };
+type Props = {
+  title: string;
+  button: { url: string; text: string };
+  posts: PostProps[];
+};
 
-// export const Posts: React.FC<Props> = ({ title, posts }) => (
-//   <Wrapper>
-//     <Main>
-//       {title && <Title>{title}</Title>}
-//       <ButtonAllPosts withArrow>See all products</ButtonAllPosts>
-//     </Main>
-//     {posts && (
-//       <WrapperPosts>
-//         {posts?.map((props) => (
-//           <PostPreview {...props} />
-//         ))}
-//       </WrapperPosts>
-//     )}
-//   </Wrapper>
-// );
+export const Posts: React.FC<Props> = ({ title, button: { url, text }, posts }) => (
+  <Wrapper>
+    {title && <Title>{title}</Title>}
+    <LinkAllPosts href={url} arrowSize="s">
+      {text}
+    </LinkAllPosts>
+    {posts && (
+      <WrapperPosts>
+        {posts?.map((props) => (
+          <PostPreview key={props.title} {...props} />
+        ))}
+      </WrapperPosts>
+    )}
+  </Wrapper>
+);

@@ -58,11 +58,15 @@ const renderLinks = (links: NavLink[]) => {
 
   const wrapper = (children: React.ReactNode) => <WrapperImages>{children}</WrapperImages>;
 
-  return itemsToRender.map((items) => {
+  return itemsToRender.map((items, itemsIndex) => {
     const areItemsImages = !!items.find(({ src }) => src);
 
     return (
-      <ConditonalWrapping condition={areItemsImages} wrapper={wrapper}>
+      <ConditonalWrapping
+        key={items[itemsIndex].href ?? `nav-links-${itemsIndex}`}
+        condition={areItemsImages}
+        wrapper={wrapper}
+      >
         {items.map(({ href, text, src }, index) => (
           <LinkItem key={text ?? `nav-link-${index}`} href={href}>
             {renderLinkContent({ text, src })}

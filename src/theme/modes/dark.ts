@@ -12,6 +12,8 @@ export const dark: ColorMode = {
   gray: '#C4C9C8',
   gray1: '#797D7C',
   gray2: '#F1F4F6',
+  gray3: '#323232',
+  btnRound: '#5E6971',
   card: { bg: '#1B2832', border: '#5E6971' },
   imageFilter: 'brightness(0) invert(1)',
 };

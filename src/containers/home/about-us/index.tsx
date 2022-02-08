@@ -16,7 +16,7 @@ export const AboutUs: React.FC<Props> = ({ title, description, button: { url, te
           <Description>{description}</Description>
         </WrapperDescription>
       )}
-      <StyledButton href={url} withArrow>
+      <StyledButton href={url} arrowSize="s">
         {text}
       </StyledButton>
     </Main>

@@ -5,12 +5,11 @@ import type { LinkProps } from 'theme-ui';
 
 export const Wrapper = styled(Flex)(
   css({
-    flexDirection: ['column', 'column', 'row'],
+    flexDirection: ['column', null, null, 'row'],
     alignItems: 'flex-start',
-    mx: [null, null, 'xl'],
-    mt: ['s', null, 'xl'],
-    mb: 'l',
-    gap: 'm',
+    ml: [null, null, 'xl'],
+    mr: [null, null, 'l'],
+    gap: (t) => t.space.m + t.space.xxs,
   }),
 );
 
@@ -23,37 +22,35 @@ export const StyledImage = styled(Image)(
 export const Main = styled(Flex)(
   css({
     flexDirection: 'column',
-    flex: 0.7,
+    flex: 0.52,
     maxWidth: 1050,
-    px: ['s', null],
+    pl: ['s', null, 'none'],
+    pr: ['xs', null, 'none'],
   }),
 );
 
-export const Title = styled(Text)(css({ mb: 'm' }));
+export const Title = styled(Text)(css({ mb: 'm', fontWeight: 'light' }));
 
 Title.defaultProps = {
-  variant: 'h2',
-  as: 'h2',
+  variant: 'h1',
+  as: 'h1',
 };
 
 export const WrapperDescription = styled(Box)(
   css({
     mx: [null, null, 'l'],
-    px: 's',
+    pl: 's',
+    pr: 'xxs',
     mb: 'm',
     borderLeft: '1px solid',
     borderColor: 'primary',
   }),
 );
 
-export const Description = styled(Text)(
-  css({
-    fontSize: [null, 'bodyL'],
-  }),
-);
+export const Description = styled(Text)(css({}));
 
 Description.defaultProps = {
-  variant: 'bodyParagraphS',
+  variant: 'body',
 };
 
 export const StyledButton = styled(Button)<LinkProps>(

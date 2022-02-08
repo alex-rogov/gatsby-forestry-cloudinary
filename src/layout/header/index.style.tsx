@@ -4,6 +4,9 @@ import VShapeLogo from 'assets/images/logos/v-shape.svg';
 
 export const StyledHeader = styled(Box)(
   css({
+    position: 'absolute',
+    left: 0,
+    right: 0,
     my: ['s', 'l'],
     mx: ['s', null, 'l'],
   }),
@@ -22,7 +25,13 @@ export const Wrapper = styled(Flex)(
   }),
 );
 
-export const Logo = styled(VShapeLogo as React.ComponentType)(
+export const Icon = styled.svg(
+  css({
+    maxWidth: 32,
+  }),
+);
+
+export const Logo = styled(VShapeLogo)(
   css({
     width: [32, 56],
   }),

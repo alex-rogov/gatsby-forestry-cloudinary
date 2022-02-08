@@ -26,7 +26,7 @@ export const Roles: React.FC<Props> = ({ title, description, button: { url, text
           <Description>{description}</Description>
         </WrapperDescription>
       )}
-      <StyledButton href={url} withArrow>
+      <StyledButton href={url} arrowSize="l">
         {text}
       </StyledButton>
     </Main>

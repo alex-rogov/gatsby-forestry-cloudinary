@@ -36,6 +36,7 @@ exports.createPages = async ({ actions, graphql }) => {
         fields: { slug },
       },
     }) => {
+
       createPage({
         path: slug,
         component: templates.blogPost,
@@ -76,6 +77,24 @@ exports.createResolvers = ({ createResolvers }) => {
               },
             },
             type: `File`,
+          });
+          return entries;
+        },
+      },
+      allProducts: {
+        type: `[File!]!`,
+        // args   : { limit: `Int`, skip: `Int` },
+        async resolve(source, args, context, info) {
+          const { entries } = await context.nodeModel.findAll({
+            query: {
+              // limit : args.limit,
+              // skip  : args.skip,
+              filter: {
+                internal: { mediaType: { eq: 'text/markdown' } },
+                sourceInstanceName: { eq: 'products' },
+              },
+            },
+            type: `File`
           });
           return entries;
         },

@@ -1,45 +1,57 @@
-import type { Theme } from 'theme-ui';
+import { merge, Theme } from 'theme-ui';
 import baseTheme from '../theme';
 
 const theme: Theme = {
-  ...baseTheme,
   config: {
     initialColorModeName: 'light',
   },
   text: {
+    hero: { fontSize: ['heroMobile', 'hero'], letterSpacing: '-0.01em', lineHeight: ['64px', '88px'] },
     h1: {
-      fontSize: 'h1',
+      fontSize: ['h1Mobile', 'h1'],
+      letterSpacing: '-0.01em',
     },
     h2: {
       fontSize: ['h2Mobile', 'h2'],
-      fontWeight: 'light',
-      letterSpacing: '-0.01em',
+      letterSpacing: [null, 'mediumS'],
     },
     h3: {
       fontSize: ['h3Mobile', 'h3'],
-      fontWeight: 'bold',
-      letterSpacing: 'regularS',
+      letterSpacing: [null, 'mediumS'],
+    },
+    h4: {
+      fontSize: ['h3', 'h4'],
+    },
+    h5: {
+      fontSize: ['h5Mobile', 'h5'],
+      letterSpacing: ['mediumS', '-0.01em'],
     },
     h6: {
       fontSize: 'h6',
+      lineHeight: '24px',
     },
     h7: {
       fontSize: 'h7',
+      letterSpacing: ['regular', 'looseS'],
     },
     h8: {
       fontSize: 'h8',
     },
-    bodyS: {
-      fontSize: ['bodyS', 'h6'],
-      lineHeight: ['24px', '28px'],
-    },
-    bodyParagraphS: {
-      fontSize: 'h6',
+    body: {
+      fontSize: 'body',
       lineHeight: '28px',
     },
-    bodyParagraph: {
-      fontSize: ['h6', 'bodyL'],
-      lineHeight: ['28px', '32px'],
+    bodyS: {
+      fontSize: ['bodyS', 'body'],
+      lineHeight: ['24px', '28px'],
+    },
+    bodyL: {
+      fontSize: ['body', 'bodyL'],
+      lineHeight: ['32px', '28px'],
+    },
+    button: {
+      fontSize: 'h7',
+      letterSpacing: 'regular',
     },
   },
   buttons: {
@@ -47,18 +59,38 @@ const theme: Theme = {
       width: 24,
     },
     primary: {
-      variant: 'text.h7',
+      variant: 'text.button',
       fontWeight: 'bold',
       color: 'secondary',
       minHeight: 'button',
       transition: 'buttons',
       letterSpacing: 'regular',
-      //TODO: proper button resizing according to the content
-      py: 18,
       borderRadius: 0,
       '&:hover': {
         bg: 'blue',
         color: 'btnHover',
+      },
+    },
+    link: {
+      variant: 'buttons.primary',
+      bg: 'transparent',
+      color: 'primary',
+      ':hover': {
+        bg: 'transparent',
+        color: 'primary',
+      },
+    },
+    round: {
+      variant: 'buttons.primary',
+      boxShadow: 'primary',
+      bg: 'btnRound',
+      borderRadius: 100,
+      color: 'primary',
+      alignItems: 'center',
+      px: 'xxs',
+      ':hover': {
+        bg: 'btnRound',
+        color: 'primary',
       },
     },
     emailSubmit: {
@@ -72,6 +104,10 @@ const theme: Theme = {
       bg: 'productCard.bg',
       border: '1px solid',
       borderColor: 'productCard.border',
+      maxWidth: 'productCard',
+    },
+    postPreview: {
+      maxWidth: 'postPreviewCard',
     },
   },
   forms: {
@@ -96,4 +132,4 @@ const theme: Theme = {
   },
 };
 
-export default theme;
+export default merge(baseTheme, theme);
